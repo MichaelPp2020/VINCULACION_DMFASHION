@@ -1,0 +1,17 @@
+.dt-resume .col-form .grup-casilla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.btn-add-data-promo{
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    font-family: var(--fuente-OPENSANS);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+

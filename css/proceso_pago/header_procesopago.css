@@ -1,0 +1,86 @@
+.pd_border{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.hed{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    align-content: center;
+    background-color: var(--color-amarillo-principal);   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+    .scrolling{
+        background-color: var(--color-vino);
+    }
+.hed .logo{
+    flex: 0 1 auto;
+    padding: 0 30px 0 10px;
+}
+    .logo>img{
+        width: 70px;
+    }
+.hed .navegacion{
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    font-family: var(--Banchscrich-font);
+}
+
+.hed .buttons{   
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+}
+    .buttons.bol{
+        position: relative;
+    }
+    .bol>.conta{
+        background-color: var(--blanco);
+        width: 23px;
+        height: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--color-vino);
+        font-size: .9rem;
+
+        position: absolute;
+        bottom: -5px;
+        right: -10px;
+    }
+
+
+.items{
+    color: var(--color-vino);
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Banchscrich-font);
+}
+
+.items--cte{
+    border: 2px solid var(--color-vino);
+    width: 100px;
+    border-radius: 10px;
+    padding: 7px 15px;
+    margin-right: 20px;   
+    font-size: .9rem;
+}
+    .items--cte.register{
+        background-color: var(--color-vino);
+        color: var(--color-amarillo-principal);
+    }

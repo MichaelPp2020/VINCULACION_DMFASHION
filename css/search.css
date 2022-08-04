@@ -1,0 +1,37 @@
+
+.search{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    background-color: var(--azul-fuerte);
+    height: 40px;
+    padding: 0 10px 0;
+    border-radius: 30px;
+  }
+  .buscar{
+    border: none;
+    background-color: var(--azul-fuerte);
+    outline: none;
+    font-size: 20px;
+    float: left;
+    transition: .3s;
+    width: 0;
+    color: white;
+  }
+  .boton{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 30px;
+  }    
+  
+/*Buscador*/
+@media screen and (min-width:480px){
+    .search:hover> .buscar{
+        width: 300px;
+    }
+    
+  }

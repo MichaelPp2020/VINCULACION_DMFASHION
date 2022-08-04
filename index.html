@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>DM FASHION</title>
+    <link rel="icon" href="Imagenes/Shopping.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $("#loader").fadeOut('slow');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box-sms">
+        <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
+        <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div>
+        <div class="lay"></div>
+    </div>
+    <div id="loader" class="loading"></div>
+    <div class="btn-wss-ct">
+        <a href="https://api.whatsapp.com/send?phone=593989367222&app=facebook&entry_point=page_cta&fbclid=IwAR17GlrjdDwZbxxKt1j1WFy9NWzp_7umcBrXpqFqtvRzU3GcNClliZ6kbro"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <header>
+        <nav id="navBar" class="nav pdd_border navbar_all">
+            <a href="index.html" id="logo-marca" class="logo">
+                <img class="normal" src="./Imagenes/dm-logo2.png" alt="Logoo">
+                <img class="long change-marca" src="./Imagenes/dm-logo2.png" alt="Logoo" />
+            </a>
+            <div class="group_btn">
+                <button class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="container-items-nav">
+                <div class="grup-items-scroll">
+                    <div class="nav__navegacion">
+                        <a href="#" id="boxMenu-Select" class="nav__items">Menú<i class="fas fa-chevron-down"></i>
+                            <div class="menu-container">
+                                <div class="carrousel-menu">
+                                    <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left" aria-hidden="true"></i></button>
+                                    <div id="catMenuDesp" class="group-items">
+                                        <a href="menu-productos.html" class="item-categoria">
+                                            <div class="item-img"><img src="./Imagenes/dm-logo2.png" alt="logoo"></div>
+                                            <p class="name-cat-menuD">Todos los Productos</p>
+                                        </a>
+
+                        <a href="menu-productos.html" class="item-categoria">
+                            <div class="item-img"><img src="./Imagenes/ropa.jpg" alt=""></div>
+                            <p class="name-cat-menuD">VESTIDO DE ROJO A CUADRO</p>
+                        </a>
+                        <a href="menu-productos.html" class="item-categoria">
+                            <div class="item-img"><img src="./Imagenes/ropa2.jpg" alt=""></div>
+                            <p class="name-cat-menuD">VESTIDO NEGRO</p>
+                        </a>
+                        <a href="menu-productos.html" class="item-categoria">
+                            <div class="item-img"><img src="./Imagenes/ropa3.jpg" alt=""></div>
+                            <p class="name-cat-menuD">VESTIDO DE RAYAS ROJO</p>
+                        </a>
+                        <a href="menu-productos.html" class="item-categoria">
+                            <div class="item-img"><img src="./Imagenes/ropa4.jpg" alt=""></div>
+                            <p class="name-cat-menuD">VESTIDO ROJO A CUADRO</p>
+                        </a>
+                        <a href="menu-productos.html" class="item-categoria">
+                            <div class="item-img"><img src="./Imagenes/ropa5.jpg" alt=""></div>
+                            <p class="name-cat-menuD">CONJUNTO MUJER</p>
+                        </a>
+                    </div>
+                    <button id="btnNext" class="next-btn"><i class="fas fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            </a>
+
+            <a href="promociones.html" class="nav__items ">Promociones</a>
+            <a href="contactanos.html" class="nav__items">Contáctanos</a>
+            </div>
+            <div class="nav__botones botones-option">
+                <button class="nav__items--cta login" onclick="AbrirFormulario()">Iniciar Sesión</button>
+                <button class="nav__items--cta register" onclick="AbrirFormulario()">Registrarme</button>
+            </div>
+            </div>
+            </div>
+            <div class="bolsita">
+                <a class="add" href="mi-bolsa.html">
+                    <img src="Imagenes/icono-compra.png"  width="85px" height="50px">
+                </a>
+                <div class="contador">
+                    <p class="producto">0</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="vent-form-user loginForm form_autent">
+            <div class="head_wind">
+                <button class="login" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/dm-logo2.png" alt="logoo" />
+            </div>
+            <form class="form-send">
+                <h1 class="form__titulo">Iniciar Sesión</h1>
+                <div class="input-contenedor">
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required name="emailUser"><span class="mnj-error alert-email"></span></p>
+                    </div>
+
+                    <div class="row-input">
+                        <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                    </div>
+                </div>
+                <div class="pie-form">
+                    <button type="submit" onclick="ComprobarDatos()" class="btn-send-infor">Iniciar Sesión</button>
+                    <p class="form__link">¿No Tienes Cuenta? <a href="#">Crea una Cuenta </a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="vent-form-user registerForm form_autent">
+            <div class="head_wind">
+                <button class="register" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/dm-logo2.png" alt="logo luchin" />
+            </div>    
+                <form action="" id="faseuno">
+                    <h1 class="form__titulo">Crear Cuenta</h1>
+                    <div class="input-contenedor">
+                        <div class="row-input div">
+                            <p class="col-input"><label>Nombre(s)</label><input type="text" id="nameid" required name="name">
+                                <span class="mnj-error alert-firstName"></span>
+                            </p>
+                            <p class="col-input"><label>Apellido(s)</label><input type="text" id="apellidoid" required name="apellido">
+                                <span class="mnj-error alert-lastName"></span>
+                            </p>
+                        </div>
+                        <div class="row-input">
+                            <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" id="fechaid" required name="dateNac"><span class="mnj-error alert-dateNacm"></span></p>
+                        </div>
+                        <div class="row-input">
+                            <p class="col-input"><label>Número de Teléfono</label><input type="text" id="telefonoid" required name="telef" maxlength="10"><span class="mnj-error alert-telephone"></span></p>
+                        </div>
+                        <div class="row-input">
+                            <p class="col-input"><label>Correo Electrónico</label><input type="email" id="gmailid" required name="emailUser"><span class="mnj-error alert-email"></span></p>
+                        </div>
+                        <div class="row-input div">
+                            <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" id="passwordid" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                            <p class="col-input"><label>Confirmar Contraseña</label><input class="pass2" type="password" id="password1id" required name="secondPass"><span class="mnj-error alert-password2"></span></p>
+                        </div>
+                    </div>
+                    <div class="pie-form">
+                        <button type="submit" onclick="ComprobarDatos()" class="btn-send-infor">Crear Cuenta</button>
+                        <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
+                    </div>
+                </form>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="container-slider">
+
+            <div class="txt-slider">
+                <p class="hero__subtitulo">¡BIENVENIDOS!</p>
+                <h1 class="hero__titulo">DM FASHION
+                    <h1 class="hero__titulo">Te Viste Diferente</h1>
+                </h1>
+                <p class="hero__subtitulo text">SOMOS UNA TIENDA VIRTUAL ESPECIALIZADA EN VESTIRTE A LA MODA, TAMBIEN CONTAMOS CON NUESTRA TIENDA FISICA
+
+                    VISITANOS Y APROVECHA NUESTRAS OFERTAS.
+                    
+                    TODO  LO  QUE BUSCAS  AL ALCANCE DE TUS MANOS</p>
+            </div>
+            <ul class="slider-pictures">
+                <li><img src="./Imagenes/fondo1.jpg" alt="" /></li>
+                <li><img src="./Imagenes/ropa.jpg" alt="" /></li>
+                <li><img src="./Imagenes/ropa3.jpg" alt="" /></li>
+                <li><img src="./Imagenes/ropa4.jpg" alt="" /></li>
+            </ul>
+        </section>
+
+        <section class="promo-general">
+            <div class="head_main_section pdd_border">
+                <h1>Promociones</h1>
+            </div>
+            <div class="contain-promos">
+                <a href="menu-productos.html" class="item__promo">
+                    <img src="./Imagenes/ropa.jpg">
+                    <div class="detalle">
+                        <p class="topic">VESTIDOS DE RAYAS CUADRO</p>
+                        <p class="descrip"><span class="price-new">$4.99</span><span><s>$6.50</s></span></p>
+                    </div>
+                </a>
+                <a href="menu-productos.html" class="item__promo">
+                    <img src="./Imagenes/ropa2.jpg">
+                    <div class="detalle">
+                        <p class="topic">VESTIDOS NEGRO</p>
+                        <p class="descrip"><span class="price-new">$5.00</span><span><s>$6.50</s></span></p>
+                    </div>
+                </a>
+                <a href="menu-productos.html" class="item__promo">
+                    <img src="./Imagenes/ropa3.jpg">
+                    <div class="detalle">
+                        <p class="topic">VESTIDOS DE RAYAS ROJO</p>
+                        <p class="descrip"><span class="price-new">$ 7.00</span><span><s>$8.00</s></span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="more_promo">
+                <a href="promociones.html" class="btn_more_promo">Ver más Promociones</a>
+            </div>
+        </section>
+
+        
+        <section class="menu__category">
+            <div class="head_main_section pdd_border section-topic">
+                <h1>Nuestros Productos</h1>
+            </div>
+            <div class="section_carrousel">
+                <button id="btnPrevious" class="previous-btn btn-left"><i class="fas fa-chevron-left"></i></i></button>
+                <div id="catMenuDes" class="group_carrousel">
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/ropa.jpg" alt=""></div>
+                        <p class="name-cat">VESTIOS DE RAYAS CUADRO</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/ropa5.jpg" alt=""></div>
+                        <p class="name-cat">Conjunto mujer</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/ropa4.jpg" alt=""></div>
+                        <p class="name-cat">Vestido a cuadros</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/ropa2.jpg" alt=""></div>
+                        <p class="name-cat">Vestido Negro</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/ropa3.jpg" alt=""></div>
+                        <p class="name-cat">Vestido Rojo a rayas</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/FONDO2.jpg" alt=""></div>
+                        <p class="name-cat">Camisa Estampada</p>
+                    </a>
+                </div>
+                <button id="btnNext" class="next-btn btn-rigth"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+       
+        <div class="bottom">
+            <div class="legend__ftt">
+                <h3 class="footer__copyright">Derechos reservados &copy; DM-FASHION</h3>
+                <p class="credit"><span class="detalle"></span> Vinculación Fase 1</p>
+            </div>
+        </div>
+    </main>   
+        
+    <script>
+        $(window).scroll(function() {
+            if ($('#navBar').offset().top > 200) {
+                $('#navBar').addClass('scrolling');
+                $('#logo-marca .long').removeClass('change-marca');
+                $('#logo-marca .normal').addClass('change-marca');
+            } else {
+                $('#navBar').removeClass('scrolling');
+                $('#logo-marca .normal').removeClass('change-marca');
+                $('#logo-marca .long').addClass('change-marca');
+            }
+        })
+    </script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./app.js"></script>
+<script src="./js/carrousel.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/validacion_navbar.js"></script>
+
+
+</html>

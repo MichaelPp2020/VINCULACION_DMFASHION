@@ -1,0 +1,76 @@
+.main-profile-user{
+    margin-top: 70px;
+    min-height: 600px;
+    background-color: var(--bg-admin);
+    font-family: var(--fuente-OPENSANS);
+    color: var(--color-text-negro-bajo);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.main-profile-user .infor-count{
+    background-color: var(--color-blanco);
+    padding: 30px 50px;
+    border-radius: 20px;
+    width: 60%;
+    height: 100%;
+}
+    .infor-count>h2{
+        font-size: 1.4rem;
+        font-family: var(--fuente-OSWALD);
+        margin: 0;
+    }
+    .infor-count>.form-change-user{
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-gap: 50px;
+        padding: 20px 0;
+    }
+        .form-change-user .colm-form.pass{
+            width: 250px;
+        }
+    .infor-count .form-change-user .colm-form h3{
+        font-size: 1.1rem;
+        margin: 0 0 10px 0;
+    }
+    .form-change-user .colm-form .grup-casillas:not(.grup-casillas.extern){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .form-change-user .colm-form .grup-casillas p{
+        margin: 0;
+        padding-bottom: 15px;
+    }
+    
+    .form-change-user .colm-form .grup-casillas p label{
+        color: var(--color-brd-input);
+        display: block;
+        font-size: 1rem;
+    }
+    .form-change-user .colm-form .grup-casillas p input{
+        display: block;
+        width: calc(100% - 20px);
+        font-size: 1rem;
+        border: none;
+        font-family: var(--fuente-OPENSANS);
+        border-bottom: 1px solid var(--color-brd-input);
+        padding: 10px;
+        outline: none;
+        color: var(--color-text-negro-bajo);
+    }
+    .form-change-user .colm-form .grup-casillas p input:focus{
+        border-bottom: 1.5px solid var(--color-amarillo-principal);
+    }
+    .btn-change-data-form{
+        border: none;
+        cursor: pointer;
+        background-color: var(--color-aprobado);
+        color: var(--color-blanco);
+        font-family: var(--fuente-OPENSANS);
+        font-size: .9rem;
+        padding: 10px 20px;
+        border-radius: 7px;
+        font-weight: bold;
+        margin-top: 15px;
+    }

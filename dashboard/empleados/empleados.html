@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados - Adminsitración</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body class="body-admin left-navbr">
+  <div id="root">
+     <aside class="aside-bar aside">
+            <button class="btn__menu" id="button-menu-admin"><i class="fal fa-bars"></i></button>
+            <div class="image">
+                <img src="../../Imagenes/dm-logo2.png" alt="logoo">
+            </div>
+            <div class="container-item">
+            </div>
+            <div class="legend">ADMINISTRACIÓN</div>
+            <div class="container-item">
+                <a href="../clientes/clientes.html" class="item-aside">
+                    <i class="estado"></i>
+                    <i class="icon-item far fa-users"></i>
+                    <p class="topic-item">Clientes</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="../ventas/ventas.html" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-analytics"></i>
+                    <p class="topic-item">Ventas</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="../promociones/promociones.html" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-badge-percent"></i>
+                    <p class="topic-item">Promociones</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="../empleados/empleados.html" class="item-aside active">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-poll-people"></i>
+                    <p class="topic-item">Empleados</p>
+                </a>
+            </div>
+        </aside>
+
+    <div class="ctn-main-dash">
+        <div class="navbar-align">
+            <div class="item-navbar">
+                <div class="image">
+                    <img src="../../Imagenes/user.png" alt="">
+                </div>
+                <p class="name_user">Administración</p>
+            </div>
+            <div class="item-navbar">
+                <button type="button" class="btn-unlogin"><i class="fal fa-sign-out"></i></button>
+            </div>
+        </div>
+        <main class="contenido-admin pos-main-rel">
+
+            <div class="theme-apart">
+                <h2>Empleados</h2>
+                <button type="button" class="button_th_head">Agregar</button>
+            </div>
+
+            <section class="container-main bd__sect">
+              <div class="container-form">
+                <h2 class="mi_clase title_card_cl">Lista de Empleados</h2>
+                <table class="tables_adm">
+                  <thead>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Correo Electrónico</th>
+                    <th>Telefóno</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th></th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Romina Pamela</td>
+                      <td>Macias Bravo</td>
+                      <td>rominpal2@gmail.com</td>
+                      <td>0982149091</td>
+                      <td>18/08/2000</td>
+                      <td class="action_table">
+                        <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                        <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Victoria Andrea</td>
+                        <td>Mendoza Cedeño</td>
+                        <td>victoriand19@gmail.com</td>
+                        <td>0987530098</td>
+                        <td>20/01/1999</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Luis Miguel</td>
+                        <td>Reyes Cevallos</td>
+                        <td>luismreyes@gmail.com</td>
+                        <td>0993647016</td>
+                        <td>18/08/2001</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jhon David</td>
+                        <td>Zambrano Moreira</td>
+                        <td>jhon2022@gmail.com</td>
+                        <td>0945386901</td>
+                        <td>20/08/2002</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Pablo</td>
+                        <td>Roca Bello</td>
+                        <td>pabloroc2@gmail.com</td>
+                        <td>0988563001</td>
+                        <td>26/10/1998</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+        </main>
+    </div>
+</div>
+<script>
+    const body = document.getElementById('root');
+    const menuBtn = document.querySelector('.btn__menu');
+    
+    menuBtn.addEventListener('click', ()=>{
+        const imageAside = document.querySelector('.image-navbar');
+
+        if(body.classList.contains('left-navbar')){
+            body.classList.remove('left-navbar');
+            imageAside.innerHTML = '<img src="../Imagenes/luchin.png" alt="logo-luchin">';
+        }else{
+            body.classList.add('left-navbar');
+            imageAside.innerHTML = '<img class="small" src="../Imagenes/logo.png" alt="logo-luchin">';
+        }
+    })
+
+    document.querySelectorAll('.aside-bar .container-item').forEach(item =>{
+        item.addEventListener('mouseenter', (e)=>{
+            if(body.classList.contains('left-navbar')){
+                e.target.classList.add('view');
+                if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                    e.target.lastElementChild.classList.add('active');
+                }
+            }
+        });
+        item.addEventListener('mouseleave', (e)=>{
+            if(body.classList.contains('left-navbar')){
+                e.target.classList.remove('view');
+                if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                    e.target.lastElementChild.classList.remove('active');
+                }
+            }
+        })
+    })
+
+    document.querySelectorAll('.aside-bar .container-item .item-aside').forEach(item =>{
+        item.addEventListener('click', (e)=>{
+            if(!document.body.classList.contains('left-navbar')){
+                const itemClick = this.document.activeElement;
+                const subitem = this.document.activeElement.nextElementSibling;
+                // console.log(this.document.activeElement.nextElementSibling);
+                if(subitem != null){
+                    if(subitem.classList.contains('active')){
+                        subitem.classList.remove('active');
+                        itemClick.classList.remove('view');
+                    }else{
+                        subitem.classList.add('active');
+                        itemClick.classList.add('view');
+                    }
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>
+

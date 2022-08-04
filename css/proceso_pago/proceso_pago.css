@@ -1,0 +1,251 @@
+
+.contenido{
+        width: 206px;
+        margin: 24px 385px 43px 65px;
+        padding: 74px 1px 0 0;
+        font-family: var(--fuente-OSWALD);
+        font-size: 25px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--color-negro);
+}
+.dat_clien{
+    width: 200px;
+    margin: 0 340px 24px 0;
+    font-family: var(--fuente-OSWALD);
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color-amarillo-principal);
+}
+.client{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+}
+.form_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 15px;
+}
+.form_input{
+    width: 208.5px;
+    height: 37px;
+    margin: 7.5px 0 0;
+    padding: 10.5px 82px 10.5px 22px;
+    border: solid 0.3px var(--bg-dark);
+    line-height: 45px;
+    background-color: var(--blanco);
+    font-size: 15px;
+    font-family:var(--fuente-OSWALD);
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+/*Cuadro de pago*/
+.izquierda{
+    float: right;
+    width: 20%;
+    height: 300px;
+    justify-content: left;
+    text-align: left;
+    font-size: 50px;
+    padding: 100px;
+}
+.bord{
+    width: 230px;
+    height: 5px;
+    border: solid 0.5px var(--bg-dark);
+    background-color: var(--azul-fuerte);
+}
+.deta{
+    width: 114.5px;
+  margin: 9px 36.5px 16px 21.5px;
+  font-family: var(--fuente-OSWALD);
+  font-size: 13.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--azul-fuerte);
+}
+.entrega{
+    width: 24.5px;
+  height: 15px;
+  margin: 16px 22.5px 9px 21.5px;
+  font-family: var(--fuente-OSWALD);
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--azul-fuerte);
+}
+.cli{
+    width: 140.5px;
+  height: 15px;
+  margin: -24px 1px -35px 1px;
+  font-family: var(--fuente-OSWALD);
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--bg-dark);
+}
+.desti{
+    width: 30.5px;
+  height: 15px;
+  margin: 9px 16.5px 21.5px 21.5px;
+  font-family: var(--fuente-OSWALD);
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--azul-fuerte);
+}
+.destino{
+    width: 140.5px;
+  height: 15px;
+  margin: -37px 1px 1px 35px;
+  font-family: var(--fuente-OSWALD);
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--bg-dark);
+}
+.pago{
+    width: 94px;
+  height: 16px;
+  margin: 24.5px 57px 16px 21.5px;
+  font-family: var(--fuente-OSWALD);
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--azul-fuerte);
+}
+.pago1{
+    width: 140.5px;
+  height: 15px;
+  margin: -32px -15px 1px 1px;
+  font-family: var(--fuente-OSWALD);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  float: right;
+  color: var(--azul-fuerte);
+}
+.guardar_pago{
+    width: 230px;
+  height: 42px;
+  margin: 12.5px 0 0;
+  padding: 13px 33px 13px 33.5px;
+  background-color: var(--azul-fuerte);
+  font-family: var(--fuente-OSWALD);
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blanco);
+  cursor: pointer;
+}
+.form_error{
+  width: 40%;
+  height: 40px;
+  line-height: 40px;
+  background-color:brown;
+  padding: 0 10px;
+  border-radius: 2px; 
+  display: none;
+}
+
+.form_error-activo{
+  display: block;
+}
+.form_enviado{
+  font-size: 14px;
+  color: green;
+  display: none;
+
+}
+
+.form_enviado-activo{
+  display: block;
+}
+/*HASTA*/
+.direccion{
+    width: 200px;
+    margin: 0 340px 24px 0;
+    font-family: var(--fuente-OSWALD);
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--color-amarillo-principal);
+}
+.dire{
+    width: 335px;
+    height: 37px;
+    margin: 7.5px 0 0;
+    padding: 10.5px 291px 10.5px 22px;
+    
+}
+.refere{
+    width: 335px;
+    padding: 10.5px 291px 10.5px 22px;
+    border: solid 0.3px var(--bg-dark);
+    background-color: var(--blanco);
+    font-family: var(--fuente-OSWALD);
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+@media screen and (max-width: 800px) {
+    .client{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,72 @@
+.grid_producto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+}
+.cabe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_cards {
+  display: flex;
+  justify-content: space-between;
+}
+.fechas {
+  display: flex;
+  justify-content: space-between;
+}
+div[class*="card-rsa"] {
+  padding: 20px 35px;
+  align-items: center;
+  width: 80%;
+  /* height: 100px; */
+  justify-content: space-between;
+  margin: auto;
+  color: var(--color-text-negro);
+  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+  background: var(--color-blanco);
+}
+
+.edi {
+  background: var(--color-amarillo-principal);
+  color: var(--color-blanco);
+  border-radius: 5px;
+  padding: 4px 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.eli {
+  background: var(--color-rojo-oscuro);
+  color: var(--color-blanco);
+  border-radius: 5px;
+  width: 100%;
+  padding: 4px 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.title_card_lm {
+  margin: 0%;
+  margin-left: 7px;
+}
+.dt-resumen table {
+  border-collapse: collapse;
+}
+.dt-resumen table tbody tr {
+  font-size: 0.7rem;
+}
+.dt-resumen table tbody tr:hover {
+  background-color: var(--bg-admin);
+}
+.dt-resumen table tbody td {
+  font-weight: var(--weigth-OPENSANS-SEMIBOLD-400);
+  color: var(--color-text-input);
+  padding: 0px 10px;
+}
+.dt-resumen table thead th {
+  border-bottom: 1px solid #000;
+  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+  padding: 0px 10px;
+}

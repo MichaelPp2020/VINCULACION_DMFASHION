@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>DM FASHION</title>
+    <link rel="icon" href="Imagenes/Shopping.png">
+    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $("#loader").fadeOut('slow');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box-sms">
+        <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
+        <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div>
+        <div class="lay"></div>
+    </div>
+    <div id="loader" class="loading"></div>
+    <div class="btn-wss-ct">
+        <a href="https://api.whatsapp.com/send?phone=593989367222&app=facebook&entry_point=page_cta&fbclid=IwAR17GlrjdDwZbxxKt1j1WFy9NWzp_7umcBrXpqFqtvRzU3GcNClliZ6kbro"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <header>
+        <nav id="navBar" class="nav pdd_border navbar_all scrolling">
+            <a href="index.html" id="logo-marca" class="logo">
+                <img class="normal" src="./Imagenes/dm-logo2.png" alt="Logoo">
+                <img class="long change-marca" src="./Imagenes/dm-logo2.png" alt="Logoo" />
+            </a>
+            <div class="group_btn">
+                <button class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="container-items-nav">
+                <div class="grup-items-scroll">
+                    <div class="nav__navegacion">
+                        <a href="#" id="boxMenu-Select" class="nav__items">Menú<i class="fas fa-chevron-down"></i>
+                            <div class="menu-container">
+                                <div class="carrousel-menu">
+                                    <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left" aria-hidden="true"></i></button>
+                                    <div id="catMenuDesp" class="group-items">
+                                        <a href="menu-productos.html" class="item-categoria">
+                                            <div class="item-img"><img src="./Imagenes/dm-logo2.png" alt="logoo"></div>
+                                            <p class="name-cat-menuD">Todos los Productos</p>
+                                        </a>
+                                        <a href="" class="item-categoria">
+                                            <div class="item-img"><img src="./Imagenes/ropa.jpg" alt=""></div>
+                                            <p class="name-cat-menuD">VESTIDO DE ROJO A CUADRO</p>
+                                        </a>
+                                        <a href="" class="item-categoria">
+                                            <div class="item-img"><img src="./Imagenes/ropa2.jpg" alt=""></div>
+                                            <p class="name-cat-menuD">VESTIDO NEGRO</p>
+                                        </a>
+                                        <a href="" class="item-categoria">
+                                            <div class="item-img"><img src="./Imagenes/ropa3.jpg" alt=""></div>
+                                            <p class="name-cat-menuD">VESTIDO DE RAYAS ROJO</p>
+                                        </a>
+                                        <a href="" class="item-categoria">
+                                            <div class="item-img"><img src="./Imagenes/ropa4.jpg" alt=""></div>
+                                            <p class="name-cat-menuD">VESTIDO ROJO A CUADRO</p>
+                                        </a>
+                                        <a href="" class="item-categoria">
+                                            <div class="item-img"><img src="./Imagenes/ropa5.jpg" alt=""></div>
+                                            <p class="name-cat-menuD">CONJUNTO MUJER</p>
+                                        </a>
+                    </div>
+                    <button id="btnNext" class="next-btn"><i class="fas fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            </a>
+
+            <a href="promociones.html" class="nav__items ">Promociones</a>
+            <a href="contactanos.html" class="nav__items">Contáctanos</a>
+            </div>
+            <div class="nav__botones botones-option">
+                <button class="nav__items--cta login" onclick="AbrirFormulario()">Iniciar Sesión</button>
+                <button class="nav__items--cta register" onclick="AbrirFormulario()">Registrarme</button>
+            </div>
+            </div>
+            </div>
+            <div class="bolsita">
+                <a class="add" href="mi-bolsa.html">
+                    <img src="Imagenes/icono-compra.png"  width="85px" height="50px">
+                </a>
+                <div class="contador">
+                    <p class="producto">0</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="vent-form-user loginForm form_autent">
+            <div class="head_wind">
+                <button class="login" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/dm-logo2.png" alt="logoo" />
+            </div>
+            <form class="form-send">
+                <h1 class="form__titulo">Iniciar Sesión</h1>
+                <div class="input-contenedor">
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required name="emailUser"><span class="mnj-error alert-email"></span></p>
+                    </div>
+
+                    <div class="row-input">
+                        <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                    </div>
+                </div>
+                <div class="pie-form">
+                    <button type="submit" onclick="ComprobarDatos()" class="btn-send-infor">Iniciar Sesión</button>
+                    <p class="form__link">¿No Tienes Cuenta? <a href="#">Crea una Cuenta </a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="vent-form-user registerForm form_autent">
+            <div class="head_wind">
+                <button class="register" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/dm-logo2.png" alt="logoo" />
+            </div>
+            <form class="form-send">
+                <h1 class="form__titulo">Crear Cuenta</h1>
+                <div class="input-contenedor">
+                    <div class="row-input div">
+                        <p class="col-input"><label>Nombre(s)</label><input type="text" required name="name">
+                            <span class="mnj-error alert-firstName"></span>
+                        </p>
+                        <p class="col-input"><label>Apellido(s)</label><input type="text" required name="apellido">
+                            <span class="mnj-error alert-lastName"></span>
+                        </p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required name="dateNac"><span class="mnj-error alert-dateNacm"></span></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required name="emailUser"><span class="mnj-error alert-email"></span></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required name="telef" maxlength="10"><span class="mnj-error alert-telephone"></span></p>
+                    </div>
+                    <div class="row-input div">
+                        <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                        <p class="col-input"><label>Confirmar Contraseña</label><input class="pass2" type="password" required name="secondPass"><span class="mnj-error alert-password2"></span></p>
+                    </div>
+                </div>
+                <div class="pie-form">
+                    <button type="submit" onclick="ComprobarDatos()" class="btn-send-infor">Crear Cuenta</button>
+                    <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="textoo pdd_border">
+            <h1 class="subtitulo">RESUMEN DE TU BOLSA</h1>
+        </div>
+
+        <div class="tabla pdd_border">
+            <div>
+                <div id="tabla-list" class="cl-table">
+                    <table class="tablita">
+                        <thead>
+                            <tr>
+                                <th class="ti producto-table">Producto</th>
+                                <th class="ti precio-table">Precio</th>
+                                <th class="ti cantidad-table">Cantidad</th>
+                                <th class="ti subtotal-table">SubTotal</th>
+                                <th class="ti acciones-table"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="tody" id="lista-product">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cont-totales">
+                    <div class="ctn__resumen">
+                        <div class="recl-cupon">
+                            <div class="topic-cpp">¿Tienes algún cupón? Canjéalo aquí</div>
+                            <div class="contenedor-inputt">
+                                <input type="tex" class="cupon-100" placeholder="Ingresar el código del cupón">
+                                <button class="inputt-boton">+</button>
+                            </div>
+                        </div>
+                        <div class="sub-iva-total">
+                            <p><span class="tema-rsm">Precio de Recargo:</span><span class="price_total_pago">$2.99</span></p>
+                            <p><span class="tema-rsm">Total a Pagar:</span><span id="price_total_pago" class="price_total_pago">$12.99</span></p>
+                        </div>
+                    </div>
+                    <div class="cont-botones">
+                        <a class="button-resume-edit" href="menu-productos.html">Ver mas Productos</a>
+                        <a class="button-resume-delete" href="procesar-pedido.html">Procesar Pedido</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Facci.Uleam/" class="footer__icons"><img src="./Imagenes/facebook.svg" class="footer__img"></a>
+                <a href="https://twitter.com/facciuleam" class="footer__icons"><img src="./Imagenes/twitter.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com/channel/UCOferC0PjpEUegrVq8Re-TQ" class="footer__icons"><img src="./Imagenes/youtube.svg" class="footer__img"></a>
+        
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; DM-FASHION</h3>
+        </section>
+    </footer>
+</body>
+<script src="./js/menu.js"></script>
+<script src="./js/carrousel.js"></script>
+<script src="./js/bolsa.js"></script>
+<script src="./js/compra.js"></script>
+
+</html>

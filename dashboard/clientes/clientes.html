@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLientes - Adminsitración</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body class="body-admin left-navbr">
+  <div id="root">
+    <aside class="aside-bar aside">
+        <button class="btn__menu" id="button-menu-admin"><i class="fal fa-bars"></i></button>
+        <div class="image">
+            <img src="../../Imagenes/dm-logo2.png" alt="logoo">
+        </div>
+    
+        <div class="legend">ADMINISTRACIÓN</div>
+        <div class="container-item">
+            <a href="../clientes/clientes.html" class="item-aside active">
+                <i class="estado"></i>
+                <i class="icon-item far fa-users"></i>
+                <p class="topic-item">Clientes</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="../ventas/ventas.html" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-analytics"></i>
+                <p class="topic-item">Ventas</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="../promociones/promociones.html" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-badge-percent"></i>
+                <p class="topic-item">Promociones</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="../empleados/empleados.html" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-poll-people"></i>
+                <p class="topic-item">Empleados</p>
+            </a>
+        </div>
+    </aside>
+
+    <div class="ctn-main-dash">
+        <div class="navbar-align">
+            <div class="item-navbar">
+                <div class="image">
+                    <img src="../../Imagenes/user.png" alt="">
+                </div>
+                <p class="name_user">Administración</p>
+            </div>
+            <div class="item-navbar">
+                <button type="button" class="btn-unlogin"><i class="fal fa-sign-out"></i></button>
+            </div>
+        </div>
+        <main class="contenido-admin pos-main-rel">
+
+            <div class="theme-apart">
+                <h2>Clientes</h2>
+            </div>
+
+            <section class="container-main bd__sect">
+              <div class="container-form">
+                <h2 class="mi_clase title_card_cl">Lista de Clientes</h2>
+                <table class="tables_adm">
+                  <thead>
+                    <th>#</th>
+                    <th>Cliente</th>
+                    <th>Corrreo</th>
+                    <th>Telefono</th>
+                    <th>Cedula de Identidad</th>
+                    <th></th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Lopez Luis David</td>
+                      <td>luis-lopez@gmail.com</td>
+                      <td>0962046398</td>
+                      <td>1306308712</td>
+                      <td class="action_table">
+                        <button class="table-view" type="button">Mostrar Detalles</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Palacios Pincay Michael</td>
+                      <td>michael-palacios@gmail.com</td>
+                      <td>0963399224</td>
+                      <td>1318610613</td>
+                      <td class="action_table">
+                        <button class="table-view" type="button">Mostrar Detalles</button>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Espinoza Soledispa Edward</td>
+                        <td>edward-espinoza@gmail.com</td>
+                        <td>0939733694</td>
+                        <td>1318460209</td>
+                        <td class="action_table">
+                          <button class="table-view" type="button">Mostrar Detalles</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Parrales Solorzano Cristina</td>
+                        <td>cristina-parrales@gmail.com</td>
+                        <td>0968696673</td>
+                        <td>1306983135</td>
+                        <td class="action_table">
+                          <button class="table-view" type="button">Mostrar Detalles</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Moreira Cedeño Emiliano</td>
+                        <td>emiliano-moreira@gmail.com</td>
+                        <td>0983845273</td>
+                        <td>1317106179</td>
+                        <td class="action_table">
+                          <button class="table-view" type="button">Mostrar Detalles</button>
+                        </td>
+                        <tr>
+                            <td>6</td>
+                            <td>Pacheco Macias Gabriel</td>
+                            <td>gabriel-pacheco@gmail.com</td>
+                            <td>0968289046</td>
+                            <td>1312173210</td>
+                            <td class="action_table">
+                              <button class="table-view" type="button">Mostrar Detalles</button>
+                            </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+        </main>
+    </div>
+</div>
+<script>
+    const body = document.getElementById('root');
+    const menuBtn = document.querySelector('.btn__menu');
+    
+    menuBtn.addEventListener('click', ()=>{
+        const imageAside = document.querySelector('.image-navbar');
+
+        if(body.classList.contains('left-navbar')){
+            body.classList.remove('left-navbar');
+            imageAside.innerHTML = '<img src="../Imagenes/luchin.png" alt="logo-luchin">';
+        }else{
+            body.classList.add('left-navbar');
+            imageAside.innerHTML = '<img class="small" src="../Imagenes/logo.png" alt="logo-luchin">';
+        }
+    })
+
+    document.querySelectorAll('.aside-bar .container-item').forEach(item =>{
+        item.addEventListener('mouseenter', (e)=>{
+            if(body.classList.contains('left-navbar')){
+                e.target.classList.add('view');
+                if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                    e.target.lastElementChild.classList.add('active');
+                }
+            }
+        });
+        item.addEventListener('mouseleave', (e)=>{
+            if(body.classList.contains('left-navbar')){
+                e.target.classList.remove('view');
+                if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                    e.target.lastElementChild.classList.remove('active');
+                }
+            }
+        })
+    })
+
+    document.querySelectorAll('.aside-bar .container-item .item-aside').forEach(item =>{
+        item.addEventListener('click', (e)=>{
+            if(!document.body.classList.contains('left-navbar')){
+                const itemClick = this.document.activeElement;
+                const subitem = this.document.activeElement.nextElementSibling;
+                // console.log(this.document.activeElement.nextElementSibling);
+                if(subitem != null){
+                    if(subitem.classList.contains('active')){
+                        subitem.classList.remove('active');
+                        itemClick.classList.remove('view');
+                    }else{
+                        subitem.classList.add('active');
+                        itemClick.classList.add('view');
+                    }
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>
+
